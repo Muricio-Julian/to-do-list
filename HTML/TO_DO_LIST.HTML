@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/RECET.CSS" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/TO_DO_LIST.CSS" />
+    <title>TO_DO_LIST</title>
+</head>
+
+<body>
+    <header class="encabezado bg-success navbar navbar-expand-lg fixed-top">
+        <h1>📚 To Do List</h1>
+    </header>
+    
+    <main>
+
+
+        <main>
+            <!--Formulario-->
+            <section>
+                <div id="formTableWrapper">
+                    <div id="cajaFormulario">
+                        <form id="formulario">
+                            <label>Nombre</label>
+                            <input type="text" id="inputNombre" placeholder="Nombre" required />
+                            <br />
+                            <label>Apellido</label>
+                            <input type="text" id="inputApellido" placeholder="Apellido" required />
+                            <br />
+                            <label>Descripcion</label>
+                            <textarea id="descripcion" cols="30" rows="10" placeholder="Descripcion"></textarea>
+                            <br />
+                            <label>Fecha inicio</label>
+                            <input type="date" id="inputFechaInicio" required />
+                            <br />
+                            <label>Fecha fin</label>
+                            <input type="date" id="inputFechaFin" required />
+                            <br />
+                            <button type="button" class="btn btn-success" onclick="agregarTareas()">Agregar</button>
+                        </form>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+
+        <footer>
+            <!--Footer-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="footer" class="text-center">
+                            <h5>📚 Todos Los Derechos Son Reservados</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <script src="/JS/SCIPT.JS"></script>
+</body>
+
+</html>
